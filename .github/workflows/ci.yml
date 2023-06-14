@@ -28,4 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn package 
+      run: |
+        mvn -version
+        mvn clean
+        mvn test
+        mvn assembly:single 
