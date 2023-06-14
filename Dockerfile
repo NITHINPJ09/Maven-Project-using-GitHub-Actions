@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM openjdk:11-jre-slim-buster
+FROM openjdk:11-jre-slim
 WORKDIR /usr/app
 COPY ./target/Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar /usr/app/
 EXPOSE 8080
