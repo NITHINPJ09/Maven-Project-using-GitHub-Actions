@@ -3,5 +3,4 @@
 FROM openjdk:11-jre-slim-buster
 WORKDIR /usr/app
 COPY ./target/Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar /usr/app/
-EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "Calculator-1.0-SNAPSHOT-jar-with-dependencies.jar"]
