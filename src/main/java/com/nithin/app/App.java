@@ -9,12 +9,12 @@ public class App
     {
         System.out.println("<---PROGRAM FOR ADDING TWO NUMBERS--->");
         App obj = new App();
-        int x = 20, y = 30, result;  
-        /* Scanner sc = new Scanner(System.in);  
+        int x, y, result;  
+        Scanner sc = new Scanner(System.in);  
         System.out.print("Enter the first number: ");  
         x = sc.nextInt();  
         System.out.print("Enter the second number: ");  
-        y = sc.nextInt(); */
+        y = sc.nextInt(); 
         result = obj.sum(x, y);
         String[] cowArgs = new String[]{String.valueOf(result)};
         String cowString = Cowsay.say(cowArgs);
